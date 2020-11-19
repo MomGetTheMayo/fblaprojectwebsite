@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="widtdevice-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax.libs.font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+	height: 100%
+	color:#777
+	line-height: 1.8;
+}
+p {text-indent: 1em;} 
+
+a{text-decoration:none;}
+a:hover{text-decoration:underline; color: #000000}
+
+.padding {padding: 20px;}
+.w3-wide {letter-spacing:10px;}
+.w3-hover-opacity {cursor:pointer;}
+.center {display: block; margin-left: auto; margin-right: auto;}
+
+img.logo {
+  max-width:10%;
+  max-height:10%;
+}
+#top {
+	background-color:white;
+}
+</style>
+<head>
+<title>Booking</title>
+</head>
+<body>
+<!-- Navigation Bar + Logo -->
+		<div id="top" class="w3-top">
+	<a href="Home.html"><img class="logo" src="images\skrabbitphotography1234e.png" align="left" alt="logo"></a>
+	<div class="w3-bar" id="myNavbar">
+		<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleFunction()" title="Toggle Navigation Menu">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a href="Home.html" class="w3-bar-item w3-button">HOME</a>
+		<a href="Contacts.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-group"></i>CONTACTS</a>
+		<a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-photo"></i>PORTFOLIO</a>
+		<a href="Booking.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-photo"></i><u>BOOKING</u></a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+		</div>
+</div>
+</a>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Booking Appointments div-->
+<div align="middle" width="33%">
+	<div class="w3-card-4">
+	  <header class="w3-container w3-teal"><h1>Book an Appointment Today!</h1></header>
+	  <div class="w3-container">
+	  	<form action="booked.html" method="GET">
+	  		<fieldset>
+	  			<legend>Contact Information</legend>
+	  			<label for="name">Name: </label><input type="text" name="Name" id="name" required autofocus placeholder="Your Name" pattern="[a-zA-Z]{3,}" title="Please enter more than 3 letters">
+	  			<label for="gender">Gender: </label>
+	  			<select name="gender" required>
+	  				<option value=""> </option>
+	  				<option value="Male">Male</option>
+	  				<option value="Female">Female</option>
+	  				<!-- owo -->
+	  				<option value="Other">Other</option>
+	  			</select>
+	  			<br>
+	  			<br>
+	  			<label for="email">Email Address: </label><input type="text" name="Email" id="email" required placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter a valid Email Address.">
+	  			<label for="phone">Phone Number: </label><input type="text" name="Phone" id="phone" required placeholder="Your Phone Number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" title="Please enter a Phone Number [#### ### ###]">
+	  		</fieldset>
+	  		<br>
+	  		<fieldset>
+	  			<legend>Booking Information</legend>
+	  			<label for="package">Package: </label>
+	  			<select name="package" required>
+	  				<option value=""> </option>
+	  				<option value="Package">Graduation Package</option>
+	  				<option value="Package">Family Package</option>
+	  				<option value="Package">Custom Package</option>
+	  			</select>
+	  			<br>
+	  			<br>
+	  			<label for="date">Date of Appointment:</label>
+	  			<input name="date" type="date" name="date" min="2020-11-19">
+	  			<br>
+	  			<br>
+	  		</fiedset>
+	  		<input type="image" src="images/submit.png" alt="Submit">
+	  	</form>
+	  </div>
+	</div>
+<br>
+<hr>
+<br>
+<h1 text-align="center">Booking Options</h1>
+<p><font size="+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Graduation Package:</b> Graduation photos that include base backgrounds, and in-house tailored clothing (graduation gown, suit, and dress). All done at specificed locations.</font></p>
+<p><font size="+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Family Package:</b> Family photos that include base backgrounds, and group family photos.</font></p>
+<p><font size="+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Custom Package:</b> Freelance photos that include weddings, baby showers, and more!</font></p>
+<br>
+<br>
+<p><font size="+2">Pricing is determined at the location.</font></p>
